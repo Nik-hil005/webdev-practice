@@ -113,3 +113,59 @@
 //     console.log(count)
 //     count++;
 // },1000);
+
+// function print(name){//higher order function
+//     console.log("Hello students!", name)
+// }
+
+// function greet(num){ //higher order fn
+//     console.log("Welcome to my class!!")
+//     setTimeout(() => {
+//         console.log("Inside SetTimout")
+//         let firstName="Alex"
+//         num(firstName) 
+//     }, 2000)
+// }
+// greet(print)
+
+// console.log("Starting Homework...");
+
+// setTimeout(() => {
+//     console.log("Homework Done!");
+//     console.log("Starting Dinner...");
+    
+//     setTimeout(() => {
+//         console.log("Dinner done!");
+//         console.log("Getting ready to go out..");
+
+//         setTimeout(() => {
+//             console.log("Going to the playground!");
+//         }, 1000); //after dinner
+//     }, 1500); //dinner time
+// }, 2000); //homework time
+
+// function finishHomework(callback) {
+//     console.log("Starting homework...");
+//     setTimeout(() => {
+//         console.log("Homework done!");
+//         callback();
+//     }, 2000)
+// }
+
+// function eatDinner(callback) {
+//     console.log("Starting Dinner...");
+//     setTimeout(() => {
+//         console.log("Dinner done!");
+//         callback();
+//     }, 1500)
+// }
+
+// function goToPlayground() {
+//     console.log("Going to the playground!");
+// }
+
+// finishHomework(() => {
+//     eatDinner(() => {
+//         goToPlayground();
+//     });
+// });
