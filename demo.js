@@ -91,7 +91,7 @@
 
 // setInterval(()=>{
 //     console.log("hello world!")
-// },2000); 
+// },2000);
 
 // const timerId=setInterval(()=>{
 //     console.log("hello world!!")
@@ -119,7 +119,7 @@
 //     setTimeout(() => {
 //         console.log("Inside SetTimout")
 //         let firstName="Alex"
-//         num(firstName) 
+//         num(firstName)
 //     }, 2000)
 // }
 // greet(print)
@@ -129,7 +129,7 @@
 // setTimeout(() => {
 //     console.log("Homework Done!");
 //     console.log("Starting Dinner...");
-    
+
 //     setTimeout(() => {
 //         console.log("Dinner done!");
 //         console.log("Getting ready to go out..");
@@ -165,7 +165,6 @@
 //         goToPlayground();
 //     });
 // });
-
 
 // const p=new Promise(function(resolve,reject){
 //     // resolve()
@@ -250,27 +249,94 @@
 
 /* 09/02/26 -  */
 
-console.log("First Line")
-setTimeout(() => {
-    console.log("Inside Timeout")
-},0);
-const p=new Promise((resolve,reject)=>{
-    resolve()
-})
+// console.log("First Line")
+// setTimeout(() => {
+//     console.log("Inside Timeout")
+// },0);
+// const p=new Promise((resolve,reject)=>{
+//     resolve()
+// })
 
-p.then(()=>{
-    console.log("Inside Promise")
-}).catch(()=>{
-    console.log("Inside Catch")
-})
+// p.then(()=>{
+//     console.log("Inside Promise")
+// }).catch(()=>{
+//     console.log("Inside Catch")
+// })
 
-const p2=new Promise((resolve,reject)=>{
-    resolve()
-})
+// const p2=new Promise((resolve,reject)=>{
+//     resolve()
+// })
 
-p2.then(()=>{
-    console.log("Inside Promise2")
-}).catch(()=>{
-    console.log("Inside Catch2")
-})
-console.log("Last Line")
+// p2.then(()=>{
+//     console.log("Inside Promise2")
+// }).catch(()=>{
+//     console.log("Inside Catch2")
+// })
+// console.log("Last Line")
+
+// const form=document.querySelector("#form")
+// const eventCards=document.querySelector(".event_cards")
+
+// function orderFood() {
+//   return new Promise(function (resolve, reject) {
+//     setTimeout(() => {
+//       console.log("Food Ordered");
+//       resolve("Food Ordered");
+//     }, 1000);
+//   });
+// }
+
+// function prepareFood() {
+//   return new Promise(function (resolve, reject) {
+//     setTimeout(() => {
+//       console.log("Food Prepeared");
+//       resolve("Food Prepeared");
+//     }, 1000);
+//   });
+// }
+
+// function deliverFood() {
+//   return new Promise(function (resolve, reject) {
+//     setTimeout(() => {
+//       console.log("Food Delivered");
+//       resolve("Food Delivered");
+//     }, 1000);
+//   });
+// }
+
+// orderFood().then((data)=>{
+//     console.log(data)
+//     return prepareFood()
+// }).then((data)=>{
+//     console.log(data)
+//     return deliverFood()
+// }).then((data)=>{
+//     console.log(data)
+// }).catch((err)=>{
+//     console.log(err)
+// })
+
+// async function order(){
+//     const data=await orderFood()
+//     console.log(data)
+//     await prepareFood()
+//     await deliverFood()
+// }
+
+// order()
+
+console.log("First line")
+try{
+    // console.log(sample)
+    let age=19
+    if(age<18){
+        //error
+        throw new Error("Access Denied")
+    }
+}catch(err){
+    console.log(err)
+}finally{
+    console.log("finally block")
+}
+
+console.log("last line")
