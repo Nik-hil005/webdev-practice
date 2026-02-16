@@ -1,3 +1,5 @@
+/* Query selectors */
+
 // const para=document.querySelector('p');
 // para.textContent='This is a simple sample page.';
 
@@ -22,6 +24,8 @@
 // para[0].textContent='this is para1'
 // para[1].style.color='blue'
 // para[1].innerHTML
+
+/* Event listeners */
 
 // const button=document.querySelector('#btn')
 // // button.classList.add('btn')
@@ -73,25 +77,21 @@
 // }
 // calc()
 
+/* Set Timeout */
+
 // console.log("first line");
 // setTimeout(()=>{
 //     console.log("after 2 sec")
 // },2000);
 // console.log("second line")
 
-
-
-
 // setTimeout(()=>{
 //     alert("alert after 3 sec!!")
 // },3*1000);
 
-
 // setInterval(()=>{
 //     console.log("hello world!")
 // },2000); 
-
-
 
 // const timerId=setInterval(()=>{
 //     console.log("hello world!!")
@@ -101,10 +101,6 @@
 // setTimeout(()=>{
 //     clearInterval(timerId)
 // },10*1000);
-
-
-
-
 
 // let count=1;
 
@@ -193,62 +189,88 @@
 
 // console.log(p)
 
-function doHomework(){
-    return new Promise(function(resolve,rejected){
-        setTimeout(()=>{
-            let done=true;
-            if(done){
-                console.log("Homework is done")
-                resolve("Homework completed")
-            }else{
-                rejected("Homework is not done")
-            }
-        },3000)
-    })
-    return p
-}
+// function doHomework(){
+//     return new Promise(function(resolve,rejected){
+//         setTimeout(()=>{
+//             let done=true;
+//             if(done){
+//                 console.log("Homework is done")
+//                 resolve("Homework completed")
+//             }else{
+//                 rejected("Homework is not done")
+//             }
+//         },3000)
+//     })
+//     return p
+// }
 
-function eatDinner(){
-    return new Promise(function(resolve,rejected){
-        setTimeout(()=>{
-            let done=true;
-            if(done){
-                console.log("Dinner is done")
-                resolve("Dinner completed")
-            }else{
-                rejected("Dinner is not done")
-            }
-        },3000)
-    })
-    return p
-}
+// function eatDinner(){
+//     return new Promise(function(resolve,rejected){
+//         setTimeout(()=>{
+//             let done=true;
+//             if(done){
+//                 console.log("Dinner is done")
+//                 resolve("Dinner completed")
+//             }else{
+//                 rejected("Dinner is not done")
+//             }
+//         },3000)
+//     })
+//     return p
+// }
 
-function goToPlayground(){
-    return new Promise(function(resolve,rejected){
-        setTimeout(()=>{
-            let done=true;
-            if(done){
-                console.log("Play is done")
-                resolve("play completed")
-            }else{
-                rejected("Play is not done")
-            }
-        },3000)
-    })
-    return p
-}
+// function goToPlayground(){
+//     return new Promise(function(resolve,rejected){
+//         setTimeout(()=>{
+//             let done=true;
+//             if(done){
+//                 console.log("Play is done")
+//                 resolve("play completed")
+//             }else{
+//                 rejected("Play is not done")
+//             }
+//         },3000)
+//     })
+//     return p
+// }
 
-doHomework().then((data)=>{
-    console.log(data)
-    return eatDinner()
-}).then((data)=>{
-    console.log(data)
-    return goToPlayground()
-}).then((data)=>{
-    console.log(data)
-}).catch((err)=>{
-    console.log(err)
-}).finally(()=>{
-    console.log("All tasks are done")
+// doHomework().then((data)=>{
+//     console.log(data)
+//     return eatDinner()
+// }).then((data)=>{
+//     console.log(data)
+//     return goToPlayground()
+// }).then((data)=>{
+//     console.log(data)
+// }).catch((err)=>{
+//     console.log(err)
+// }).finally(()=>{
+//     console.log("All tasks are done")
+// })
+
+/* 09/02/26 -  */
+
+console.log("First Line")
+setTimeout(() => {
+    console.log("Inside Timeout")
+},0);
+const p=new Promise((resolve,reject)=>{
+    resolve()
 })
 
+p.then(()=>{
+    console.log("Inside Promise")
+}).catch(()=>{
+    console.log("Inside Catch")
+})
+
+const p2=new Promise((resolve,reject)=>{
+    resolve()
+})
+
+p2.then(()=>{
+    console.log("Inside Promise2")
+}).catch(()=>{
+    console.log("Inside Catch2")
+})
+console.log("Last Line")
