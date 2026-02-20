@@ -354,3 +354,60 @@
 // }
 // getData()
 
+// async function sendData() {
+//     try{
+//         const response=await fetch('https://dummyjson.com/products/add',{
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify({
+//                 title:"Macbook",
+//                 description:"Macbook Pro",
+//                 price:100000,
+//                 discountPercentage:5,
+//                 rating:4.5,
+//                 stock:5,
+//                 brand:"Apple"
+//             })
+//         })
+//         const data=await response.json()
+//         console.log(data)
+//     }catch(error){
+//         console.log("Data not found")
+//     }
+// }
+// sendData()
+
+// let obj={
+//     title:"Macbook",
+//     description:"Macbook Pro"
+    
+// }
+
+// localStorage.setItem("obj",JSON.stringify(obj))
+// localStorage.setItem("name","Nikk")
+// localStorage.setItem("age",23)
+// console.log(localStorage.getItem("name"))
+// console.log(localStorage.getItem("age"))
+// console.log(JSON.parse(localStorage.getItem("obj")))
+
+// localStorage.removeItem("age")
+
+// localStorage.clear()
+
+// sessionStorage.setItem("obj",JSON.stringify(obj))
+// sessionStorage.setItem("name","Nikk")
+// sessionStorage.setItem("age",23)
+// console.log(localStorage.getItem("name"))
+// console.log(localStorage.getItem("age"))
+// console.log(JSON.parse(localStorage.getItem("obj")))
+// sessionStorage.removeItem("age")
+
+document.cookie="name=Nikk; expires=Sat 21 Feb 2026 12:00:00 UTC"
+document.cookie="age=23; expires=Sat 21 Feb 2026 12:00:00 UTC"
+
+console.log(document.cookie)
+
+async function sample() {
+    await fetch("http://127.0.0.1:5500/index.html")
+}
+sample()
