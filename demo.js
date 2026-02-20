@@ -325,18 +325,32 @@
 
 // order()
 
-console.log("First line")
-try{
-    // console.log(sample)
-    let age=19
-    if(age<18){
-        //error
-        throw new Error("Access Denied")
-    }
-}catch(err){
-    console.log(err)
-}finally{
-    console.log("finally block")
-}
+// console.log("First line")
+// try{
+//     // console.log(sample)
+//     let age=19
+//     if(age<18){
+//         //error
+//         throw new Error("Access Denied")
+//     }
+// }catch(err){
+//     console.log(err)
+// }finally{
+//     console.log("finally block")
+// }
 
-console.log("last line")
+// console.log("last line")
+
+// async function getData(){
+//     try{
+//         const response= await fetcg("https://dummyjson.com/products")
+//         console.log(response.ok)
+//         if (response.ok===false) throw new Error("data not found")
+//         const data= await response.json()
+//         console.log(data)
+//     }catch(error){
+//        console.log("data not found")
+//     }
+// }
+// getData()
+
