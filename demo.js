@@ -402,12 +402,57 @@
 // console.log(JSON.parse(localStorage.getItem("obj")))
 // sessionStorage.removeItem("age")
 
-document.cookie="name=Nikk; expires=Sat 21 Feb 2026 12:00:00 UTC"
-document.cookie="age=23; expires=Sat 21 Feb 2026 12:00:00 UTC"
+// document.cookie="name=Nikk; expires=Sat 21 Feb 2026 12:00:00 UTC"
+// document.cookie="age=23; expires=Sat 21 Feb 2026 12:00:00 UTC"
 
-console.log(document.cookie)
+// console.log(document.cookie)
 
-async function sample() {
-    await fetch("http://127.0.0.1:5500/index.html")
-}
-sample()
+// async function sample() {
+//     await fetch("http://127.0.0.1:5500/index.html")
+// }
+// sample()
+
+/* Generators */
+
+// function* generate(){
+    // yield 1
+    // yield 2
+    // yield 3
+
+    // for (let index = 1; index < 4; index++) {
+    //     yield index;
+    // }
+
+//     let i=1;
+//     while (true) {
+//         yield i
+//         i++
+//     }
+// }
+
+// const gen=generate()
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+
+/* currying */
+
+// function add(a,b,c){
+//     return a+b+c
+// }
+
+// function add(a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c
+//         }
+//     }
+// }
+
+// // console.log(add(1)(2)(3))
+
+// const first=add(1)
+// const second=first(2)
+// const third=second(3)
+// console.log(`the sum is ${third}`)
