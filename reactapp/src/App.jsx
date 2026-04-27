@@ -14,8 +14,11 @@ function App() {
 
   return (
     <>
-      <Sample count={count} setCount={setCount}/>
-      <HomePage/>
+     
+     <Routes>
+      <Route path='/' element={<HomePage/><Sample/></>}/>
+      <Route path='/contact' element={<Contact/>}/>
+     </Routes>
     </>
   )
 }
